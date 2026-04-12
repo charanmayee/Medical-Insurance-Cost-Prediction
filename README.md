@@ -43,22 +43,21 @@ Common regression metrics used:
 - R² Score
 
 ## Example Prediction
-Example input:input_data = (31,1,25.74,0,1,0)
 - Age: 31 
 - BMI: 25.74 
-- Children: 2  
+- Children: 0  
 - Smoker: No  
 - Sex: Female  
-- Region: Northwest  
+- Region: southeast  
 
 Output:
-- Predicted charges: `$XXXX.XX`
+- Predicted charges: $3760.0805765
 
 ## Results
 Add your final model and scores here, e.g.:
 - Best model: RandomForestRegressor
 - Test RMSE: 4,200
-- Test R²: 0.86
+- Test R²: 0.7447273869684076
 
 ## Future Improvements
 - Hyperparameter tuning (GridSearchCV / RandomizedSearchCV)
