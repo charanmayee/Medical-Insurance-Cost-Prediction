@@ -19,6 +19,7 @@ Typical columns used in this project:
 
 > If your dataset source is public (e.g., Kaggle), add the link here.
 
+
 ## Approach
 1. Load and explore the dataset (EDA)
 2. Handle missing values (if any)
@@ -40,42 +41,6 @@ Common regression metrics used:
 - MAE (Mean Absolute Error)
 - MSE (Mean Squared Error) / RMSE
 - R² Score
-
-## Repository Structure (Suggested)
-```text
-Medical-Insurance-Coset-Prediction/
-├─ data/                     # dataset files (optional)
-├─ notebooks/                # Jupyter notebooks (EDA + training)
-├─ src/                      # python scripts (training, preprocessing)
-├─ models/                   # saved models (optional)
-├─ requirements.txt
-└─ README.md
-```
-
-## Installation
-```bash
-# clone the repo
-git clone https://github.com/charanmayee/Medical-Insurance-Coset-Prediction.git
-cd Medical-Insurance-Coset-Prediction
-
-# (recommended) create a virtual environment
-python -m venv .venv
-# activate:
-# Windows: .venv\Scripts\activate
-# macOS/Linux: source .venv/bin/activate
-
-# install dependencies
-pip install -r requirements.txt
-```
-
-## Usage
-### Option 1: Run a notebook
-Open Jupyter Notebook / JupyterLab and run the notebook in `notebooks/`.
-
-### Option 2: Run a training script (if you add one)
-```bash
-python src/train.py
-```
 
 ## Example Prediction
 Example input:
@@ -101,8 +66,3 @@ Add your final model and scores here, e.g.:
 - Model explainability (SHAP / permutation importance)
 - Deploy as a web app (Streamlit / Flask)
 
-## Contributing
-Contributions are welcome. Feel free to open an issue or submit a pull request.
-
-## License
-Add a license (MIT / Apache-2.0 / etc.) or remove this section if not applicable.
