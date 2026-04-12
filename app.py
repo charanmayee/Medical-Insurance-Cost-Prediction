@@ -26,6 +26,7 @@ def load_model():
 model = load_model()
 
 # --- Inputs ---
+# Default values match the "Example Prediction" in README.md (age 31, BMI 25.74).
 age = st.number_input("Age", min_value=0, max_value=120, value=31)
 bmi = st.number_input("BMI", min_value=10.0, max_value=80.0, value=25.74, step=0.01)
 children = st.number_input("Number of Children", min_value=0, max_value=10, value=0, step=1)
