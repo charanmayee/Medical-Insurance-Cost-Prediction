@@ -1,8 +1,9 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 import joblib
 import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 st.set_page_config(page_title="Medical Insurance Cost Prediction", page_icon="🩺")
 st.title("🩺 Medical Insurance Cost Prediction")
@@ -11,8 +12,9 @@ st.title("🩺 Medical Insurance Cost Prediction")
 MODEL_CANDIDATES = ["model.pkl", "insurance_model.pkl", "best_model.pkl"]
 model = None
 for f in MODEL_CANDIDATES:
-    if os.path.exists(f):
-        model = joblib.load(f)
+    model_path = os.path.join(BASE_DIR, f)
+    if os.path.exists(model_path):
+        model = joblib.load(model_path)
         break
 
 if model is None:
