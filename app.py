@@ -34,7 +34,6 @@ sex_val = 1 if sex == "male" else 0
 smoker_val = 1 if smoker == "yes" else 0
 region_map = {"northeast":0, "northwest":1, "southeast":2, "southwest":3}
 region_val = region_map[region]
-
 # Common feature order
 X = pd.DataFrame([{
     "age": age,
